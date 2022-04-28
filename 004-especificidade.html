@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Css</title>
+
+  <style>
+    /* 0.0.0.1 */
+    p {
+      color: red;
+    }
+
+    /* 0.0.1.1 */
+    .nova-cor {
+      color: cornflowerblue;
+    }
+
+    /* 0.1.1.1 */
+    /*Pq ele está utilizando o id e o class e o p tornando a especificidade 0.1.1.1*/
+    #nova-cor-id,
+    #nova-cor-id-2 {
+      color: darkgray;
+    }
+
+
+    /* 1.1.1.1 */
+  </style>
+
+</head>
+
+<body>
+  <p>Texto 1.</p>
+  <p class="nova-cor">Texto 2.</p>
+  <p class="nova-cor">Texto 3.</p>
+  <p id="nova-cor-id" class="nova-cor">Texto 4.</p>
+  <p id="nova-cor-id-2" class="nova-cor" style="color: darkseagreen;">Texto 5.</p>
+</body>
+
+</html>
